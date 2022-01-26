@@ -6,21 +6,26 @@
 #ifdef ESP32
   #include <WiFi.h>
 #endif
+// #define test
 
 
 
-#define debug
-#define test
+// #define debug
 
 #define FordCargo
 // #define MercedesArocs
 // #define FusoCanter
+
+
+
 bool SendOK=false;
 
 
-
-
 uint8_t receiverMAC[] = {0x9c, 0x9c, 0x1f, 0xd8, 0x17, 0x7c}; // Master MAC Adress
+
+
+
+
 
 typedef struct message {
   int V1 = -1;
